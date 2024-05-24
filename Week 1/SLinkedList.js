@@ -112,8 +112,7 @@ class LinkiedList{
         let curr=this.head
         while(curr){
             if(curr.value === value){
-                return i
-                
+                return i  
             }
             curr=curr.next
             i++

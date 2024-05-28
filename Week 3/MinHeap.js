@@ -12,18 +12,18 @@ class MinHeap{
         this.heap.push(element)
         this.heapifyUp(this.heap.length-1)
     }
-    remove(){
-        if(this.heap.length===0){
-            return null
-        }
-        if(this.heap.length===1){
-            this.heap.pop()
-        }
-        const min=this.heap[0]
-        this.heap[0]=this.heap.pop()
-        this.heapifyDown(0)
-        return min
-    }
+    // remove(){
+    //     if(this.heap.length===0){
+    //         return null
+    //     }
+    //     if(this.heap.length===1){
+    //         this.heap.pop()
+    //     }
+    //     const min=this.heap[0]
+    //     this.heap[0]=this.heap.pop()
+    //     this.heapifyDown(0)
+    //     return min
+    // }
     heapifyDown(index){
         while(true){
             const leftChild=2*index+1
